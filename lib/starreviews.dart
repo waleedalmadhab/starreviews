@@ -150,8 +150,8 @@ class StarReviewsHorizontal extends StatelessWidget {
   final bool showRatingNumber;
 
   final List<String> starNames;
-  final TextStyle starNameStyle;
-  final TextStyle percentageStyle;
+  final TextStyle? starNameStyle;
+  final TextStyle? percentageStyle;
   final bool showPercentage;
 
   final Color valueColor;
@@ -165,7 +165,7 @@ class StarReviewsHorizontal extends StatelessWidget {
 
   final bool showOnlyAverage;
   final bool showProgressBarBorder;
-  final TextStyle averageNumberTextStyle;
+  final TextStyle? averageNumberTextStyle;
   final double spaceBetween;
 
   final double spaceBetweenBars;
@@ -174,7 +174,7 @@ class StarReviewsHorizontal extends StatelessWidget {
   final bool alignReviewsCenter;
 
   StarReviewsHorizontal(
-      {Key key,
+      {Key? key,
       required this.total,
       required this.starNames,
       this.starSize = 12,
