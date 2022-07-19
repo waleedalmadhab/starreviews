@@ -26,7 +26,7 @@ class ProgressBar extends StatelessWidget {
           height: this.lineHeight,
           child: LinearPercentIndicator(
             lineHeight: this.lineHeight,
-            padding: null,
+            padding: EdgeInsets.all( 0),
             linearStrokeCap: LinearStrokeCap.roundAll,
             percent: this.value,
             // percent filled

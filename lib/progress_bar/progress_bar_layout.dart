@@ -3,12 +3,12 @@ import 'package:starreviews/progress_bar/progress_bar.dart';
 
 class ProgressBarLayout extends StatelessWidget {
   final String starName;
-  final TextStyle starNameStyle;
-  final TextStyle percentageStyle;
+  final TextStyle? starNameStyle;
+  final TextStyle? percentageStyle;
   final bool showPercentage;
 
-  final Color valueColor;
-  final Color progressBarBackgroundColor;
+  final Color? valueColor;
+  final Color? progressBarBackgroundColor;
   final double value;
 
   final bool showBorder;
@@ -24,7 +24,7 @@ class ProgressBarLayout extends StatelessWidget {
       this.percentageStyle = const TextStyle(fontSize: 12),
       this.valueColor = const Color(0xff656565),
       this.progressBarBackgroundColor = Colors.white,
-      this.value})
+      this.value=0})
       : super(key: key) {
     if (value == null) {
       throw ArgumentError('value cannot be empty');

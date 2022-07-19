@@ -31,7 +31,7 @@ class StarReviews extends StatelessWidget {
   final double spaceBetween;
 
   StarReviews(
-      {Key key,
+      {Key? key,
       required this.total,
       required this.starNames,
       this.starSize = 16,
