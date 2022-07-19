@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  percent_indicator: ^4.2.2
+  percent_indicator: ^3.4.0
 
 dev_dependencies:
   flutter_test:
