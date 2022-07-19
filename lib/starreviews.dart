@@ -13,12 +13,12 @@ class StarReviews extends StatelessWidget {
   final bool showRatingNumber;
 
   final List<String> starNames;
-  final TextStyle starNameStyle;
-  final TextStyle percentageStyle;
+  final TextStyle? starNameStyle;
+  final TextStyle? percentageStyle;
   final bool showPercentage;
 
-  final Color valueColor;
-  final Color progressBarBackgroundColor;
+  final Color? valueColor;
+  final Color? progressBarBackgroundColor;
   final List<double> values;
 
   final double starSize;
@@ -32,8 +32,8 @@ class StarReviews extends StatelessWidget {
 
   StarReviews(
       {Key key,
-      @required this.total,
-      @required this.starNames,
+      required this.total,
+      required this.starNames,
       this.starSize = 16,
       this.lineHeight = 10,
       this.spaceBetween = 11,
@@ -47,8 +47,8 @@ class StarReviews extends StatelessWidget {
       this.percentageStyle = const TextStyle(fontSize: 12),
       this.valueColor = const Color(0xff656565),
       this.progressBarBackgroundColor = Colors.white,
-      @required this.average,
-      @required this.values})
+      required this.average,
+      required this.values})
       : assert(total != null),
         super(key: key) {
     if (values == null) {
@@ -175,8 +175,8 @@ class StarReviewsHorizontal extends StatelessWidget {
 
   StarReviewsHorizontal(
       {Key key,
-      @required this.total,
-      @required this.starNames,
+      required this.total,
+      required this.starNames,
       this.starSize = 12,
       this.spaceBetweenBars = 5,
       this.lineHeight = 7,
@@ -193,8 +193,8 @@ class StarReviewsHorizontal extends StatelessWidget {
           const TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
       this.valueColor = const Color(0xff656565),
       this.progressBarBackgroundColor = Colors.white,
-      @required this.average,
-      @required this.values})
+      required this.average,
+      required this.values})
       : assert(total != null),
         super(key: key) {
     if (values == null) {

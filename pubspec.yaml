@@ -4,13 +4,13 @@ version: 1.0.5
 homepage: https://github.com/buraktabn/starreviews
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  percent_indicator: "^2.1.1"
+  percent_indicator: ^4.2.2
 
 dev_dependencies:
   flutter_test:

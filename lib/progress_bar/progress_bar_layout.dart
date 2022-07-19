@@ -15,8 +15,8 @@ class ProgressBarLayout extends StatelessWidget {
   final double lineHeight;
 
   ProgressBarLayout(
-      {Key key,
-      this.starName,
+      {Key? key,
+      this.starName='',
         this.lineHeight = 5,
       this.showBorder = true,
       this.showPercentage = true,

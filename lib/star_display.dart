@@ -7,7 +7,7 @@ class StarDisplay extends StatelessWidget {
   final int starCounts;
 
   const StarDisplay(
-      {Key key,
+      {Key? key,
         this.starCounts = 5,
         this.value = 0,
         this.size = 16,
